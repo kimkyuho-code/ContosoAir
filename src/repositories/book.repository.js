@@ -8,7 +8,7 @@ class BookFlightsRepository {
         database_name = database_name  || 'admin';
         //const connectionString = `mongodb://${cosmosdb_name}:${encodeURIComponent(cosmosdb_key)}@${cosmosdb_url}/${database_name}?ssl=true&replicaSet=globaldb`;
         const connectionString = `mongodb://168.62.179.157:27017/local`;
-        mongoose.connect(connectionString, { useNewUrlParser: true });
+        mongoose.connect(connectionString, { useNewUrlParser: true,useUnifiedTopology: true});
         mongoose.Promise = global.Promise;
     }
     async getUserInfo(username) {
