@@ -7200,7 +7200,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .footer {
   background-color: transparent;
-  background-image: url('#{$assets-root}/b-footer.jpg');
+  background-image: url('../assets/b-footer.jpg');
   background-position: center 85%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -7248,7 +7248,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .block-search {
   background-color: #eee;
-  background-image: url('#{$assets-root}/b-home.jpg');
+  background-image: url('../assets/b-home.jpg');
   background-position: center bottom;
   background-repeat: repeat-x;
   padding: 2rem 0 4rem;
@@ -7311,7 +7311,7 @@ a.text-dark:hover, a.text-dark:focus {
     width: 100%; }
 
 .block-search--city {
-  background-image: url('#{$assets-root}/b-barcelona.jpg');
+  background-image: url('../assets/b-barcelona.jpg');
   background-position: center center; }
   .block-search--city .block-search-row .block-search-row-logo {
     color: rgba(255, 255, 255, 0.2); }
@@ -7699,7 +7699,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .block-seats .block-seats-flight .block-seats-flight-select {
   background-color: #cde7f0;
-  background-image: url( '#{$assets-root}/plane.png');
+  background-image: url( '../assets/plane.png');
   background-position: 51.5% 43.5%;
   background-repeat: no-repeat;
   background-size: 270% 500%;
@@ -8085,7 +8085,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 @font-face {
   font-family: 'Karla';
-  src: url("/fonts/Karla-Regular.ttf"); }
+  src: url("../fonts/Karla-Regular.ttf"); }
 
 body {
   font-family: 'Karla', 'Helvetica', 'Arial';
