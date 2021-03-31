@@ -5,17 +5,15 @@ node {
 
      stage('Build image') {
          
-          app = docker.build("k966/admin:contosoair")
+          app = docker.build("k966/admin:contosoair${env.BUILD_NUMBER}")
       }
      
      stage('Push image') {
           
            docker.withRegistry('https://registry.hub.docker.com', 'docker-hub') {
       
-                app.push("${env.BUILD_NUMBER}")
-                app.push("latest")
-              
-                
+            app.push("k966/admin:contosoair${env.BUILD_NUMBER}")
+               
            }
  
       }
