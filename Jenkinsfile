@@ -4,6 +4,6 @@ node {
      }
 
      stage('Build image') {
-         echo $BUILD_NUMBER
+         echo '$BUILD_NUMBER'
      }
 }
