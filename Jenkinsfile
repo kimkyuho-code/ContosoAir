@@ -4,16 +4,17 @@ node {
      }
 
      stage('Build image') {
-          bat  "docker build -t k966/admin:contosoair$BUILD_NUMBER ."
+         
+          app = docker.build("k966/admin:contosoair")
       }
      
      stage('Push image') {
           
            docker.withRegistry('https://registry.hub.docker.com', 'docker-hub') {
-                Credentials ID {
+      
                 app.push("${env.BUILD_NUMBER}")
                 app.push("latest")
-               }
+              
                 
            }
  
