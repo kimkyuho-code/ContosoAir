@@ -4,7 +4,7 @@ node {
      }
 
      stage('Build image') {
-          bat  "docker build -t k966/admin:contosoair$BUILD_NUMBER" ./Dockerfile
+          bat  "docker build -t k966/admin:contosoair$BUILD_NUMBER ./Dockerfile"
        
           
          echo '$BUILD_NUMBER'
