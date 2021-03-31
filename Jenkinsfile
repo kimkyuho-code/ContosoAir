@@ -5,8 +5,5 @@ node {
 
      stage('Build image') {
           bat  "docker build -t k966/admin:contosoair$BUILD_NUMBER ."
-       
-          
-         echo '$BUILD_NUMBER'
      }
 }
