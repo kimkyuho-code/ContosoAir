@@ -12,7 +12,7 @@ node {
           
            docker.withRegistry('https://registry.hub.docker.com', 'docker-hub') {
       
-            app.push("k966/admin:contosoair${env.BUILD_NUMBER}")
+            app.push("${env.BUILD_NUMBER}")
                
            }
  
