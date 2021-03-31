@@ -5,7 +5,7 @@ node {
 
      stage('Build image') {
          
-          app = docker.build("k966/admin:contosoair${env.BUILD_NUMBER}")
+          app = docker.build("k966/admin:contosoair")
       }
      
      stage('Push image') {
